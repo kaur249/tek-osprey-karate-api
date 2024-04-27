@@ -56,13 +56,12 @@ Feature: Insurance APP Security Test
       | wronguser  | wrongpassword  | 404        | NOT_FOUND   | User wronguser not found |
 
 
-    ## Steps to remember:
-    # #So now if you want to get rid of these yellows, you have to install another plugin.
+    #Steps to remember:
+    # So now if you want to get rid of these yellows, you have to install another plugin.
     #For karate, there is karate plugin for Intellij.
     #But there is a but in there when you using cucumber for UI testing you have to disable that plug so.
     #You are in the in in the race of disabling, enabling, disabling, enabling if you are using cucumber with your framework, disable plugin.
     #If you're using Karate interval plugin, so that's one thing that you might face issue if you install the plugin karate plugin, I'll show you the plugin.
-    #I haven't installed it, so it's just time for karate and it's comes here.
     #This is karate plugin.
     # Install Karate plugin, because it give you error on the final project
     # if you want to run in different line run in " " "  and end '" " " codes
