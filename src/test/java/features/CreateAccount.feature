@@ -12,7 +12,7 @@ Feature: Create new Account
     And request
       """
       {
-        "email": "kaur9592@gmail.com",
+        "email": "kaur9593@gmail.com",
         "firstName": "Kulvinder",
         "lastName": "Kaur",
         "title": "Miss.",
@@ -25,7 +25,7 @@ Feature: Create new Account
     When method post
     Then status 201
     And print response
-    And assert response.email == "kaur9592@gmail.com"
+    And assert response.email == "kaur9593@gmail.com"
     * def accountId = response.id
     * def result = callonce read('GenerateValidToken.feature')
     * def token = "Bearer " + result.response.token

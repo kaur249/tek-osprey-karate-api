@@ -9,6 +9,6 @@ public class TestRunner {
     @Karate.Test
     Karate runTest(){
         return Karate.run("classpath:features")
-                .tags("@CreateAccount_2");
+                .tags("@Regression");
     }
 }
