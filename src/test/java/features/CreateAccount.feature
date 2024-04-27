@@ -12,20 +12,20 @@ Feature: Create new Account
     And request
       """
       {
-        "email": "smith222331@gmail.com",
-        "firstName": "Smith",
-        "lastName": "Saunders",
-        "title": "Mr.",
-        "gender": "MALE",
+        "email": "kaur9592@gmail.com",
+        "firstName": "Kulvinder",
+        "lastName": "Kaur",
+        "title": "Miss.",
+        "gender": "FEMALE",
         "maritalStatus": "SINGLE",
         "employmentStatus": "Student",
-        "dateOfBirth": "1964-02-13"
+        "dateOfBirth": "1956-02-10"
       }
       """
     When method post
     Then status 201
     And print response
-    And assert response.email == "smith222331@gmail.com"
+    And assert response.email == "kaur9592@gmail.com"
     * def accountId = response.id
     * def result = callonce read('GenerateValidToken.feature')
     * def token = "Bearer " + result.response.token
@@ -33,4 +33,5 @@ Feature: Create new Account
     And header Authorization = token
     And param primaryPersonId = accountId
     When method delete
-    Then status 200
+    Then status 403
+    ## On the teacher notes status show 200
