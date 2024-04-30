@@ -4,7 +4,7 @@ Feature: CSR Portal Plan Section
   # then call plan code api request
   @Plan_1
   Scenario: Get all plans and validate expiration
-    Given url "https://dev.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     And path "/api/token"
     And request
     """

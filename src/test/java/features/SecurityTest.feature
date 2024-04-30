@@ -8,7 +8,7 @@ Feature: Insurance APP Security Test
     # Print is the step and Response is the object (in the background)
 
   Background: Setup security test
-    Given url "https://dev.insurance-api.tekschool-students.com"
+    Given url BASE_URL
     And path "/api/token"
 
   @US1_1
